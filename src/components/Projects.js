@@ -30,11 +30,12 @@ const Projects = () => {
             <img
             className='mb-4  ml-6'
               width="40"
+              alt=""
               height="40"
               src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg"
             ></img>
-            <img className='mb-4 ml-3' width="40" height="40" src="/react-2.svg"></img>
-            <img className='mb-4 ml-3' width="40" height="40" src="/sql.svg"></img>
+            <img className='mb-4 ml-3' alt="" width="40" height="40" src="/react-2.svg"></img>
+            <img className='mb-4 ml-3' alt="" width="40" height="40" src="/sql.svg"></img>
           </div>
 
           <p className="font-light h-auto font-mono text-md text-white leading-relaxed">
@@ -88,7 +89,7 @@ const Projects = () => {
         <div className={theme.coursevid}>
           <p className="text-3xl font-mono font-semibold">A Video Demo! </p>
 
-          <video className="mt-2" width="1000" height="1200" controls>
+          <video alt="" className="mt-2" width="1000" height="1200" controls>
             <source src="/video.mov" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
