@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+
 const Projects = () => {
   const [btn, setbtn] = useState("See More!");
   const hide ={coursevid:"flex p-8 hidden mt-40 w-1/2 h-auto ml-20 mr-10 mb-24 hover:animate-none bg-teal-950 rounded-3xl flex-col items-center text-center hover:shadow-stone-500 shadow-slate-50 shadow-lg",coursefeat:"hidden"};

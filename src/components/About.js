@@ -9,7 +9,7 @@ const About = () => {
       <div className="p-32">
         <img
           src="/image.jpg"
-          alt="Description of image"
+          alt=""
           className="mt-4  w-full h-96 object-cover rounded-full border-4 border-teal-950 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl"
         />
         <div className="bg-teal-950 hover:shadow-stone-500 w-72 mt-12 ml-8  shadow-md shadow-slate-50 animate-pulse font-mono font-medium text-lg rounded-3xl h-auto  ">
