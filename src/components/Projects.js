@@ -24,7 +24,7 @@ const Projects = () => {
       <div className="flex md:ml-0 flex-row justify-center gap-0">
         <div className="flex md:p-8 p-3 mt-20 md:w-1/2 w-2/3 h-80 md:h-auto md:ml-20 md:mr-10 overflow-scroll  hover:animate-none bg-teal-950 rounded-3xl flex-col items-center text-center hover:shadow-stone-500 shadow-slate-50 shadow-lg">
           <div className="flex flex-wrap flex-row items-center justify-between">
-            <p className="font-bold  font-mono text-lg md:text-3xl mb-6 text-white">
+            <p className="font-bold  font-mono text-2xl md:text-3xl mb-6 text-white">
             Smart Course Web App
             </p>
             <img
