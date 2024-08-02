@@ -36,7 +36,7 @@ const Header = () => {
             aria-current="page"
             to="/"
           >
-            About Me haha
+            About Me
           </Link>
         </li>
         <li>
