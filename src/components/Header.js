@@ -66,7 +66,7 @@ const Header = () => {
           href="/Resume_Final (2).pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white ml-2 block md:hidden text-center font-medium text-md  p-1 hover:text-neutral-700"
+          className="text-white ml-6 block md:hidden text-center font-medium text-md   hover:text-neutral-700"
         >
           𝗥𝗲𝘀𝘂𝗺e!
         </a>
