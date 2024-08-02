@@ -10,7 +10,7 @@ const About = () => {
         <img
           src="/image.jpg"
           alt=""
-          className="mt-4 block w-full h-28 md:h-96 object-cover rounded-full border-4 border-teal-950 shadow-lg  hover:scale-105 hover:shadow-2xl"
+          className="mt-4 block w-full h-80 md:h-96 object-cover md:rounded-full border-4 border-teal-950 shadow-lg  hover:scale-105 hover:shadow-2xl"
         />
         <div className="bg-teal-950 hidden md:block hover:shadow-stone-500 w-72 mt-12 ml-8  shadow-md shadow-slate-50 animate-pulse font-mono font-medium text-lg rounded-3xl h-auto  ">
           <p className="p-5">Looking for summer 2025 internships!</p>
