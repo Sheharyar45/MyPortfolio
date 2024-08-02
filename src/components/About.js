@@ -7,11 +7,12 @@ const About = () => {
   return (
     <div className="bg-black md:h-auto h-auto cover-full  w-full   items-center gap-10 justify-between text-white flex flex-row flex-wrap">
       <div className="md:p-32 mt-24 ml-3 md:mt-0 md:ml-0 ">
-        <img
-          src="/image.jpg"
-          alt=""
-          className="mt-4 block w-full h-80 md:h-96 object-cover md:rounded-full border-4 border-teal-950 shadow-lg  hover:scale-105 hover:shadow-2xl"
-        />
+      <img
+  src="/image.jpg"
+  alt=""
+  className="mt-4 block w-80 h-80 md:w-96 md:h-96 object-cover rounded-full border-4 border-teal-950 shadow-lg hover:scale-105 hover:shadow-2xl"
+/>
+
         <div className="bg-teal-950 hidden md:block hover:shadow-stone-500 w-72 mt-12 ml-8  shadow-md shadow-slate-50 animate-pulse font-mono font-medium text-lg rounded-3xl h-auto  ">
           <p className="p-5">Looking for summer 2025 internships!</p>
         </div>
