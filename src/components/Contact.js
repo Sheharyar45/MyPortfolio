@@ -40,7 +40,7 @@ const Contact = () => {
     <div className="bg-black h-screen pt-8 pb-20 overflow-scroll scroll-smooth flex flex-col items-start justify-start text-white">
     <div className="mt-16 mb-12 ml-6 text-center">
 
-      <p className="text-5xl  mt-10 font-mono items-start font-semibold mb-4">Please Reach Out!</p> 
+      <p className="text-5xl  mt-10 font-mono items-start font-semibold mb-4">Please Reach Out abhi!</p> 
       <div className="flex flex-col gap-6 mt-9 items-start mb-12">
         <a href="https://www.linkedin.com/in/sheharyar-meghani" target="_blank" rel="noopener noreferrer" className="text-2xl  mr-10 text-white bg-gradient-to-r hover:shadow-stone-500 from-white via-slate-200 to-slate-400 hover:bg-gradient-to-br  focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white dark:shadow-lg dark:shadow-white font-medium rounded-lg  px-5 py-2.5 text-center me-2 mb-2 ">
         <span className="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#0077b5]">
