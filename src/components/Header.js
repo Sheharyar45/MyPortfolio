@@ -32,7 +32,7 @@ const Header = () => {
           <Link
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="md:hover:animate-bounce block  mb-0 pb-0 px-3 hover:text-neutral-700 text-white  rounded bg-transparent md:text-white md:p-0 "
+            className="md:hover:animate-bounce block ml-4 md:ml-0  mb-0 pb-0 px-3 hover:text-neutral-700 text-white  rounded bg-transparent md:text-white md:p-0 "
             aria-current="page"
             to="/"
           >
