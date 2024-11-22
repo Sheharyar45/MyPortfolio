@@ -32,14 +32,14 @@ const Projects = () => {
               width="40"
               alt=""
               height="40"
-              src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg"
+              src="/python.svg"
             ></img>
             <img
               className="mb-4 md:hidden block "
               width="30"
               alt=""
               height="30"
-              src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg"
+              src="/python.svg"
             ></img>
             <img
               className="mb-4 hidden md:block ml-3"
@@ -250,7 +250,7 @@ const Projects = () => {
             height="1200"
             controls
           >
-            <source src="/trashninja.MP4" type="video/mp4" />
+            <source src="/trashninja.mov" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <video
@@ -260,7 +260,7 @@ const Projects = () => {
             height="1600"
             controls
           >
-            <source src="/trashninja.MP4" type="video/mp4" />
+            <source src="/trashninja.mov" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
