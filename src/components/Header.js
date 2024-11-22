@@ -73,7 +73,7 @@ const Header = () => {
       </ul>
 
       <a
-        href="/Resume_Final (2).pdf"
+        href="/ResumeCS.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="text-white  hidden md:block text-center font-medium text-xl p-6 hover:text-neutral-700"
