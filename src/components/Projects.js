@@ -157,14 +157,28 @@ const Projects = () => {
               Trash Ninja
             </p>
             <img
-              className="mb-4 hidden md:block ml-3"
-              alt=""
+              className="mb-4 hidden md:block  ml-6"
               width="40"
+              alt=""
               height="40"
               src="/python.svg"
             ></img>
             <img
-              className="mb-4 block md:block ml-3"
+              className="mb-4 md:hidden block "
+              width="30"
+              alt=""
+              height="30"
+              src="/python.svg"
+            ></img>
+            <img
+              className="mb-4 hidden md:block ml-3"
+              alt=""
+              width="40"
+              height="40"
+              src="/react-2.svg"
+            ></img>
+            <img
+              className="mb-4 block md:hidden ml-3"
               alt=""
               width="30"
               height="30"
@@ -172,6 +186,13 @@ const Projects = () => {
             ></img>
             <img
               className="mb-4 hidden md:block ml-3"
+              alt=""
+              width="40"
+              height="40"
+              src="/tensor.svg"
+            ></img>
+            <img
+              className="mb-4 block md:hidden  ml-3"
               alt=""
               width="40"
               height="40"
