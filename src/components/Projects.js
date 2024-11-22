@@ -164,7 +164,7 @@ const Projects = () => {
               src="/python.svg"
             ></img>
             <img
-              className="mb-4 block md:hidden ml-3"
+              className="mb-4 block md:block ml-3"
               alt=""
               width="30"
               height="30"
