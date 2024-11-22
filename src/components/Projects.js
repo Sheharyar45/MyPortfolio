@@ -268,7 +268,7 @@ const Projects = () => {
             alt=""
             className="mt-2 hidden md:block"
             width="200"
-            height="300"
+            height="100"
             controls
           >
             <source src="/trashninja.mov" type="video/mp4" />
@@ -278,7 +278,7 @@ const Projects = () => {
             alt=""
             className="mt-2 md:hidden p-0 block"
             width="600"
-            height="600"
+            height="200"
             controls
           >
             <source src="/trashninja.mov" type="video/mp4" />
