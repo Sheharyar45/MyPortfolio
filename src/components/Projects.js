@@ -182,7 +182,7 @@ const Projects = () => {
           <p className="font-light h-auto font-mono text-xs md:text-lg text-white leading-relaxed">
             <br />
             <br />
-            <p className={theme.projectfeat}>
+            <p className={theme.coursefeat}>
               Developed an AI-driven mobile app for efficient waste management
               by classifying trash items like plastic, metal, and cardboard,
               providing users with accurate disposal instructions (e.g.,
@@ -249,7 +249,7 @@ const Projects = () => {
             height="1200"
             controls
           >
-            <source src="/video.mov" type="video/mp4" />
+            <source src="/trashninja.MP4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <video
