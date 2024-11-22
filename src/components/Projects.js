@@ -180,13 +180,14 @@ const Projects = () => {
           </div>
 
           <p className="font-light h-auto font-mono text-xs md:text-lg text-white leading-relaxed">
-            <br />
-            <br />
-            <p className={theme.coursefeat}>
               Developed an AI-driven mobile app for efficient waste management
               by classifying trash items like plastic, metal, and cardboard,
               providing users with accurate disposal instructions (e.g.,
               recycle, compost, or donate).
+            <br />
+            <br />
+            <p className={theme.coursefeat}>
+              
               <br />
               <br />
               Key features include:
