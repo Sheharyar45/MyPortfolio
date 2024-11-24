@@ -25,7 +25,7 @@ const Projects = () => {
         <div className="flex md:p-8 p-3 mt-20 md:w-1/2 w-2/3 h-80 md:h-auto md:ml-20 md:mr-10 overflow-scroll  hover:animate-none bg-teal-950 rounded-3xl flex-col items-center text-center hover:shadow-stone-500 shadow-slate-50 shadow-lg">
           <div className="flex flex-wrap flex-row items-center justify-between">
             <p className="font-bold  font-mono text-2xl md:text-3xl mb-6 text-white">
-              Smart Course Web App
+              Smart Course App
             </p>
             <img
               className="mb-4 hidden md:block  ml-6"
@@ -268,7 +268,7 @@ const Projects = () => {
             alt=""
             className="mt-2 hidden md:block"
             width="200"
-            height="32"
+            height="12"
             controls
           >
             <source src="/trashninja.mov" type="video/mp4" />
@@ -278,7 +278,7 @@ const Projects = () => {
             alt=""
             className="mt-2 md:hidden p-0 block"
             width="600"
-            height="100"
+            height="48"
             controls
           >
             <source src="/trashninja.mov" type="video/mp4" />
