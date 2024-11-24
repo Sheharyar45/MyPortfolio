@@ -267,8 +267,8 @@ const Projects = () => {
           <video
             alt=""
             className="mt-2 hidden md:block"
-            width="200"
-            height="12"
+            width="100"
+            height="4"
             controls
           >
             <source src="/trashninja.mov" type="video/mp4" />
