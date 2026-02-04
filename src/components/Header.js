@@ -63,7 +63,7 @@ const Header = () => {
         </li>
 
         <a
-          href="/newRes.pdf"
+          href="/Sheharyar_Resume_MLE (1).pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white ml-6 -mr-12 block md:hidden text-center font-medium text-md   hover:text-neutral-700"
@@ -73,7 +73,7 @@ const Header = () => {
       </ul>
 
       <a
-        href="/newRes.pdf"
+        href="/Sheharyar_Resume_MLE (1).pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="text-white  hidden md:block text-center font-medium text-xl p-6 hover:text-neutral-700"
