@@ -29,6 +29,20 @@ const projects = [
     link: 'https://github.com/Sheharyar45/Stockgram',
   },
   {
+    title: 'BrowserBuddy — Agentic AI Browser Extension',
+    techs: ['LangGraph', 'MCP', 'LLM Agents', 'Python', 'Redis', 'TypeScript', 'FastAPI'],
+    description:
+      'Built an agentic AI browser extension for Q&A, similarity search, and price comparison with reasoning-driven workflows.',
+    bullets: [
+      'Developed multi-agentic LLM workflows using FastAPI and LangGraph with intent-based MCP tool orchestration.',
+      'Implemented Q&A, semantic similarity search, and intelligent price comparison directly in the browser experience.',
+      'Built a scalable and secure architecture with embeddings, vector search, Redis memory, and prompt-injection guardrails.',
+    ],
+    color: 'from-indigo-900/40 to-gray-900',
+    link: 'https://www.youtube.com/watch?v=g3NLOJYOJjY',
+    youtube: 'https://www.youtube.com/embed/g3NLOJYOJjY',
+  },
+  {
     title: 'Telecom Customer Churn Predictor',
     techs: ['Python', 'Scikit-learn', 'XGBoost', 'Optuna', 'SHAP', 'FastAPI', 'Pandas'],
     description:

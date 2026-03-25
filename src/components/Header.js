@@ -42,7 +42,7 @@ const Header = () => {
 
           {/* Resume Button */}
           <a
-            href="/Sheharyar_Resume_MLE (1).pdf"
+            href="/Resume_SheharyarMeghani_Ai_eng (2).pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 md:ml-4 px-4 py-1.5 text-sm font-medium text-teal-400 border border-teal-400 rounded-lg hover:bg-teal-400 hover:text-black transition-all duration-300"
