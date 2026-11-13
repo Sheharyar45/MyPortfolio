@@ -6,10 +6,10 @@ const experiences = [
     id: 'wealthsimple', company: 'Wealthsimple', date: 'Sep — Dec 2026', location: 'Toronto, ON',
     focus: 'Developer infrastructure & AI tooling',
     bullets: [
-      <>Building a deployment platform with Go, TypeScript/React, Kubernetes, and Terraform that isolates marketing campaign Docker builds so teams can ship concurrently on Cloudflare.</>,
-      <>Increased weekly PR throughput <strong>30%</strong> while reducing regressions with an AWS-hosted software factory: parallel MCP-connected agents, automated PR reviews, CI gates, and Kubernetes canary smoke tests.</>,
+      <>Improving build pipelines and deployment infrastructure using Ruby, GraphQL, TypeScript/React, Docker, Kubernetes, and Terraform.</>,
+      <>Developing the team’s software factory, including PR triage and verification layers, to increase PR throughput while reducing regressions.</>,
     ],
-    technologies: 'Go · TypeScript · React · Kubernetes · Terraform · AWS · Cloudflare',
+    technologies: 'Ruby · GraphQL · TypeScript · React · Docker · Kubernetes · Terraform · AWS · Cloudflare · MCP',
   },
   {
     id: 'stackadapt', company: 'StackAdapt', date: 'May — Aug 2026', location: 'Toronto, ON',
