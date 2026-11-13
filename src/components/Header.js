@@ -1,58 +1,60 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 
-const navLinks = [
-  { to: '/', label: 'About' },
-  { to: '/experience', label: 'Experience' },
-  { to: '/projects', label: 'Projects' },
-  { to: '/contact', label: 'Contact' },
-];
+const sections = ['about', 'experience', 'projects', 'contact'];
 
-const Header = () => {
-  const location = useLocation();
+export default function Header() {
+  const [theme, setTheme] = useState(() => document.documentElement.dataset.theme || 'light');
+  const [active, setActive] = useState('about');
+
+  useEffect(() => {
+    const media = window.matchMedia('(prefers-color-scheme: dark)');
+    const followSystem = () => {
+      let saved;
+      try { saved = localStorage.getItem('portfolio-theme'); } catch {}
+      if (saved !== 'light' && saved !== 'dark') {
+        const next = media.matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = next;
+        setTheme(next);
+      }
+    };
+    media.addEventListener('change', followSystem);
+    return () => media.removeEventListener('change', followSystem);
+  }, []);
+
+  useEffect(() => {
+    let frame;
+    const update = () => {
+      let current = 'about';
+      for (const id of sections) {
+        if (document.getElementById(id)?.getBoundingClientRect().top <= 160) current = id;
+      }
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 10) current = 'contact';
+      setActive(current);
+    };
+    const onScroll = () => { cancelAnimationFrame(frame); frame = requestAnimationFrame(update); };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => { window.removeEventListener('scroll', onScroll); cancelAnimationFrame(frame); };
+  }, []);
+
+  const toggleTheme = () => {
+    const next = theme === 'light' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = next;
+    setTheme(next);
+    try { localStorage.setItem('portfolio-theme', next); } catch {}
+  };
 
   return (
-    <nav className="fixed top-0 z-50 w-full bg-black/90 backdrop-blur-md border-b border-teal-900/40 font-mono">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8 h-16">
-        {/* Logo / Name */}
-        <Link to="/" className="text-white font-bold text-lg md:text-xl tracking-wide hover:text-teal-400 transition-colors">
-          Sheharyar<span className="text-teal-400">.</span>
-        </Link>
-
-        {/* Nav Links */}
-        <div className="flex items-center gap-1 md:gap-6">
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className={`relative px-2 md:px-3 py-1 text-sm md:text-base transition-colors duration-300 ${
-                location.pathname === link.to
-                  ? 'text-teal-400'
-                  : 'text-gray-300 hover:text-white'
-              } nav-link`}
-            >
-              {link.label}
-              <span
-                className={`absolute bottom-0 left-0 h-0.5 bg-teal-400 transition-all duration-300 ${
-                  location.pathname === link.to ? 'w-full' : 'w-0'
-                } nav-underline`}
-              />
-            </Link>
-          ))}
-
-          {/* Resume Button */}
-          <a
-            href="/Resume_SheharyarMeghani_Ai_eng (2).pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-2 md:ml-4 px-4 py-1.5 text-sm font-medium text-teal-400 border border-teal-400 rounded-lg hover:bg-teal-400 hover:text-black transition-all duration-300"
-          >
-            Resume
-          </a>
+    <header className="site-header">
+      <nav className="page-shell nav-inner" aria-label="Main navigation">
+        <a className="wordmark" href="#about" aria-label="Sheharyar Meghani, home">sm<span>.</span></a>
+        <div className="nav-links">
+          {sections.map(id => <a key={id} href={`#${id}`} aria-current={active === id ? 'location' : undefined}>{id[0].toUpperCase() + id.slice(1)}{id === 'contact' && <span aria-hidden="true"> ↗</span>}</a>)}
+          <button className="theme-toggle" type="button" onClick={toggleTheme} aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`} title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}>
+            {theme === 'light' ? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M20.8 13A9 9 0 0 1 11 3.2 9 9 0 1 0 20.8 13Z" /></svg> : <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>}
+          </button>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
-};
-
-export default Header;
+}

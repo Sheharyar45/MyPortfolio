@@ -1,37 +1,27 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Header from './components/Header';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
-// Scroll to top on route change
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
+export default function App() {
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return null;
-};
-
-const App = () => {
+    const section = { '/experience': 'experience', '/projects': 'projects', '/contact': 'contact' }[window.location.pathname];
+    if (section) window.history.replaceState(null, '', `/#${section}`);
+    const target = section || window.location.hash.slice(1);
+    if (target) document.getElementById(target)?.scrollIntoView({ behavior: 'instant' });
+  }, []);
   return (
-    <Router>
-      <div className="bg-black min-h-screen">
-        <Header />
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/*" element={<About />} />
-        </Routes>
-      </div>
-    </Router>
+    <>
+      <a className="skip-link" href="#main">Skip to content</a>
+      <Header />
+      <main id="main" className="page-shell"><About /><Experience /><Projects /><Contact /></main>
+      <footer className="site-footer page-shell">
+        <a className="footer-name" href="#about">Sheharyar Meghani</a>
+        <p>Software engineer · Toronto, Canada</p>
+        <a href="#about">Back to top <span aria-hidden="true">↑</span></a>
+      </footer>
+    </>
   );
-};
-
-export default App;
+}

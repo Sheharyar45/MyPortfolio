@@ -2,38 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Sheharyar Meghani</title>
-    <link rel="icon" href="/logo.png" sizes="32x32" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f8f7f3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#171c19" media="(prefers-color-scheme: dark)" />
+    <title>Sheharyar Meghani | Software Engineer</title>
+    <meta name="description" content="Software engineer in Toronto building reliable systems and AI tools. Experience at Wealthsimple, StackAdapt, and Geotab. Computer Science and Statistics at U of T." />
+    <meta name="author" content="Sheharyar Meghani" />
+    <link rel="canonical" href="https://sheharyarsportfolio.vercel.app/" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:site_name" content="Sheharyar Meghani" />
+    <meta property="og:title" content="Sheharyar Meghani | Software Engineer" />
+    <meta property="og:description" content="Reliable systems. Useful AI. Explore my work at Wealthsimple, StackAdapt, and Geotab, alongside open-source projects and ML research." />
+    <meta property="og:url" content="https://sheharyarsportfolio.vercel.app/" />
+    <meta property="og:image" content="https://sheharyarsportfolio.vercel.app/images/sheharyar-meghani.jpeg" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image:alt" content="Portrait of Sheharyar Meghani" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Sheharyar Meghani | Software Engineer" />
+    <meta name="twitter:description" content="Software engineer in Toronto. Reliable systems, useful AI tools, and thoughtful interfaces." />
+    <meta name="twitter:image" content="https://sheharyarsportfolio.vercel.app/images/sheharyar-meghani.jpeg" />
+    <meta name="twitter:image:alt" content="Portrait of Sheharyar Meghani" />
+    <script>
+      // Apply the saved theme before the first paint.
+      (function () {
+        var saved;
+        try { saved = localStorage.getItem('portfolio-theme'); } catch (e) {}
+        document.documentElement.dataset.theme = saved === 'light' || saved === 'dark' ? saved : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      })();
+    </script>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"Person","name":"Sheharyar Meghani","url":"https://sheharyarsportfolio.vercel.app/","image":"https://sheharyarsportfolio.vercel.app/images/sheharyar-meghani.jpeg","jobTitle":"Software Engineer Intern","email":"mailto:s.meghani@mail.utoronto.ca","sameAs":["https://linkedin.com/in/sheharyar-meghani","https://github.com/Sheharyar45"],"knowsAbout":["Software Engineering","Distributed Systems","Machine Learning","AI Infrastructure"]}
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>This portfolio uses JavaScript. Contact Sheharyar Meghani at <a href="mailto:s.meghani@mail.utoronto.ca">s.meghani@mail.utoronto.ca</a>, or visit <a href="https://github.com/Sheharyar45">GitHub</a> and <a href="https://linkedin.com/in/sheharyar-meghani">LinkedIn</a>.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
